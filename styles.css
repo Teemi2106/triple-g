@@ -148,6 +148,13 @@ footer h1 span {
   color: rgb(50, 115, 255);
   font-size: 4rem;
 }
+.section6 div {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @media all and (max-width: 500px) {
   a {
     text-decoration: none;
