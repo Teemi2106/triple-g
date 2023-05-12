@@ -15,6 +15,7 @@ header h1 {
   font-family: monospace;
   display: flex;
   align-items: center;
+   justify-content: center;
 }
 header h1 span {
   color: blue;
@@ -116,6 +117,7 @@ img {
 }
 .section7 {
   padding: 0.5rem;
+   text-align: center;
 }
 .section6 div {
   width: 90%;
