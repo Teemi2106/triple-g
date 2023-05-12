@@ -15,10 +15,10 @@ header h1 {
   font-family: monospace;
   display: flex;
   align-items: center;
-   justify-content: center;
+  justify-content: center;
 }
 header h1 span {
-  color: blue;
+  color: rgb(50, 115, 255);
   font-size: 4rem;
 }
 .nav-fill {
@@ -30,7 +30,7 @@ header h1 span {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: aqua;
+  background-color: rgb(50, 115, 255);
   font-weight: 400;
 }
 .section1 {
@@ -45,7 +45,7 @@ header h1 span {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: hsla(180, 100%, 50%, 0.2);
+  background-color: rgba(50, 115, 255, 0.1);
   min-height: 20rem;
   padding: 2rem;
   border: 2px dotted gray;
@@ -56,9 +56,12 @@ header h1 span {
   justify-content: center;
   align-items: center;
   height: 6rem;
-  min-width: 70%;
+  width: 100%;
   background-color: greenyellow;
   font-weight: 400;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 a {
   text-decoration: none;
@@ -84,7 +87,7 @@ img {
   padding: 0.5rem;
 }
 .section5 {
-  background-color: hsla(180, 100%, 50%, 0.05);
+  background-color: rgba(50, 115, 255, 0.1);
   min-height: 30rem;
   display: flex;
   flex-direction: column;
@@ -106,18 +109,18 @@ img {
   text-align: center;
 }
 .section6 {
-  background-color: aqua;
+  background-color: rgb(50, 115, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-   text-align: center;
+  text-align: center;
   word-wrap: break-word;
 }
 .section7 {
   padding: 0.5rem;
-   text-align: center;
+  text-align: center;
 }
 .section6 div {
   width: 90%;
@@ -125,7 +128,6 @@ img {
   background-color: white;
   margin: 1rem;
   border-radius: 0.2rem;
-  
 }
 footer {
   background-color: darkslategray;
@@ -143,7 +145,7 @@ footer h1 {
   color: white;
 }
 footer h1 span {
-  color: blue;
+  color: rgb(50, 115, 255);
   font-size: 4rem;
 }
 @media all and (max-width: 500px) {
