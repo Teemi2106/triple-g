@@ -111,6 +111,8 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
+   text-align: center;
+  word-wrap: break-word;
 }
 .section7 {
   padding: 0.5rem;
@@ -121,6 +123,7 @@ img {
   background-color: white;
   margin: 1rem;
   border-radius: 0.2rem;
+  
 }
 footer {
   background-color: darkslategray;
