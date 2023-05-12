@@ -6,6 +6,7 @@
 body {
   font-weight: 400;
 }
+
 header {
   min-height: 6rem;
   padding: 0.5rem;
@@ -30,6 +31,12 @@ header h1 span {
   width: 100%;
   background-color: aqua;
   font-weight: 400;
+}
+.section1 {
+  padding: 0.5rem;
+}
+.section2 {
+  padding: 0.5rem;
 }
 .section3 {
   display: flex;
@@ -103,6 +110,10 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem;
+}
+.section7 {
+  padding: 0.5rem;
 }
 .section6 div {
   width: 90%;
