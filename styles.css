@@ -129,7 +129,7 @@ img {
 }
 .section6 div {
   width: 90%;
-  height: 20rem;
+  min-height: 20rem;
   background-color: white;
   margin: 1rem;
   border-radius: 0.2rem;
