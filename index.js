@@ -1,19 +1,24 @@
-const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
-const appendAlert = (message, type) => {
-  const wrapper = document.createElement("div");
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    "</div>",
-  ].join("");
+function myHome(event) {
+  event.preventDefault();
+  window.location.href = "index.html";
+}
+function myProfile(event) {
+  event.preventDefault();
+  window.location.href = "profile.html";
+}
+function myContact(event) {
+  event.preventDefault();
+  window.location.href = "contact.html";
+}
 
-  alertPlaceholder.append(wrapper);
-};
-
-const alertTrigger = document.getElementById("liveAlertBtn");
-if (alertTrigger) {
-  alertTrigger.addEventListener("click", () => {
-    appendAlert("Nice, you triggered this alert message!", "success");
-  });
+function mySubmit(event) {
+  event.preventDefault();
+  var name = document.getElementById("name");
+  var mail = document.getElementById("mail");
+  var text = document.getElementById("text");
+  localStorage.setItem("Full Name", name);
+  localStorage.setItem("Email Address", mail);
+  var message = JSON.stringify(text);
+  localStorage.setItem(message);
+  alert("We've recieved your message ", name);
 }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+  </head>
+  <link rel="stylesheet" href="contact.css" />
+  <body>
+    <header>
+      <h1>Contact Us At</h1>
+    </header>
+    <main>
+      <table>
+        <tr>
+          <td>Tel</td>
+          <td>+31 773 348 9334</td>
+        </tr>
+        <tr>
+          <td>✉</td>
+          <td>triplegtriple@gggent.com</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <form onsubmit="mySubmit()">
+        <table>
+          <tr>
+            <td>Full Name</td>
+            <td>
+              <input
+                id="name"
+                type="text"
+                value=""
+                placeholder="Full Name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>
+              <input
+                id="mail"
+                type="email"
+                value=""
+                placeholder="email@email.com"
+                required
+              />
+            </td>
+          </tr>
+          <tr class="jay">
+            <td>Message</td>
+            <td>
+              <input
+                id="text"
+                value=""
+                placeholder="Type Message here"
+                class="message"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button class="submit" type="submit" onsubmit="mySubmit()">
+                Submit
+              </button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>

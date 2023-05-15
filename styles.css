@@ -3,14 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {width: auto!important; overflow-x: hidden!important;} 
 body {
   font-weight: 400;
   margin: 0;
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
-
+main {
+  min-height: 100vh;
+}
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
 header {
   min-height: 6rem;
   padding: 0.5rem;
@@ -20,6 +25,9 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.section1 h2 {
+  text-align: center;
 }
 header h1 span {
   color: rgb(50, 115, 255);
@@ -39,6 +47,9 @@ header h1 span {
 }
 .section1 {
   padding: 0.5rem;
+}
+.buy {
+  word-wrap: break-word;
 }
 .section2 {
   padding: 0.5rem;
@@ -64,9 +75,31 @@ header h1 span {
   width: 100%;
   background-color: greenyellow;
   font-weight: 400;
+}
+.yes2 {
+  border: 2px solid greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+  background-color: greenyellow;
+  font-weight: 400;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+.yes3 {
+  border: 2px solid greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+  background-color: greenyellow;
+  font-weight: 400;
 }
 a {
   text-decoration: none;
@@ -81,12 +114,15 @@ a {
   align-items: center;
 }
 img {
-  height: 30rem;
-  width: 30rem;
+  max-height: 30rem;
+  max-width: 30rem;
 }
 .som:hover,
 .som:focus {
   color: gray;
+}
+.som {
+  width: 100%;
 }
 .section4 {
   padding: 0.5rem;
@@ -113,6 +149,10 @@ img {
   font-size: xx-large;
   text-align: center;
 }
+.buy {
+  min-height: 6rem;
+  word-wrap: break-word;
+}
 .section6 {
   background-color: rgb(50, 115, 255);
   display: flex;
@@ -124,8 +164,16 @@ img {
   word-wrap: break-word;
 }
 .section7 {
-  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+  width: 100%;
+  min-height: 20rem;
+  padding: 2rem;
+
+  font-weight: 400;
 }
 .section6 div {
   width: 90%;
@@ -133,6 +181,7 @@ img {
   background-color: white;
   margin: 1rem;
   border-radius: 0.2rem;
+  display: flex;
 }
 footer {
   background-color: darkslategray;
@@ -141,6 +190,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 0.5rem;
+  width: 100%;
+  margin: 0;
 }
 footer h1 {
   font-family: monospace;
@@ -166,5 +217,13 @@ footer h1 span {
     font-size: 1rem;
     text-align: center;
     color: white;
+    width: 100%;
+  }
+  .buy h2 {
+    font-size: 1.5rem;
+  }
+  img {
+    max-height: 10rem;
+    max-width: 10rem;
   }
 }

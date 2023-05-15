@@ -1,0 +1,47 @@
+body {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  padding-left: 2rem;
+  color: rgb(50, 115, 255);
+}
+table {
+  width: 70%;
+}
+tr {
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  color: rebeccapurple;
+}
+.submit {
+  width: 5rem;
+  height: 2rem;
+  background-color: rgb(50, 115, 255);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: large;
+}
+tr:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.message {
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.jay {
+  display: flex;
+
+  align-items: center;
+}
