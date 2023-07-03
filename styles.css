@@ -91,6 +91,11 @@ header h1 span {
   padding: 0;
   margin-top: 0.5rem;
 }
+
+embed {
+  border-radius: 10px;
+}
+
 .yes3 {
   border: 2px solid greenyellow;
   display: flex;
@@ -101,6 +106,67 @@ header h1 span {
   background-color: greenyellow;
   font-weight: 400;
 }
+
+.popup {
+  background-color: #ffffff;
+
+  motion: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(15px);
+  width: 420px;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  display: none;
+  text-align: center;
+}
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: blue;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup .subm {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+  width: 100px;
+}
+
+.popup input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.popup h2 {
+  margin-top: -20px;
+}
+.popup p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
+}
+
 a {
   text-decoration: none;
   font-size: 2rem;
@@ -191,6 +257,7 @@ footer {
   align-items: center;
   padding-bottom: 0.5rem;
   width: 100%;
+  text-align: center;
   margin: 0;
 }
 footer h1 {
@@ -200,6 +267,22 @@ footer h1 {
   justify-content: center;
   color: white;
 }
+.ig {
+  width: 50px;
+  height: 50px;
+}
+.ssm {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.handles {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 footer h1 span {
   color: rgb(50, 115, 255);
   font-size: 4rem;
