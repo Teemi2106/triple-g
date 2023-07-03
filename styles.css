@@ -115,7 +115,7 @@ embed {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(15px);
-  width:50% ;
+  width:80% ;
   padding: 30px 40px;
   position: absolute;
   transform: translate(-50%, -50%);
