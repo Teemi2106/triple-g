@@ -4,44 +4,139 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  overflow-x: hidden !important;
 }
 header h1 {
   padding-left: 2rem;
   color: rgb(50, 115, 255);
 }
-table {
+
+main {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+#video-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+#video-popup video {
+  max-width: 90%;
+  max-height: 70%;
+}
+
+#countdown-timer {
+  font-size: 32px;
+  color: #fff;
+}
+
+.packages {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cancel-button {
+  display: none; /* Hide cancel button initially */
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.first {
+  background-image: url(/access.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  border-radius: 2rem;
+  width: 70%;
+  font-weight: 900;
+}
+.second {
+  background-image: url(/silver.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  border-radius: 2rem;
   width: 70%;
 }
-tr {
+.third {
+  background-image: url(/gold.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
-  justify-content: space-between;
-  font-size: x-large;
-  color: rebeccapurple;
-}
-.submit {
-  width: 5rem;
-  height: 2rem;
-  background-color: rgb(50, 115, 255);
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: large;
-}
-tr:last-child {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  min-height: 400px;
+  border-radius: 2rem;
+  width: 70%;
 }
-.message {
-  height: 6rem;
+.fourth {
+  background-image: url(/technoverse.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  min-height: 400px;
+  border-radius: 2rem;
+  width: 70%;
 }
-.jay {
+.fifth {
+  background-image: url(/digiverse.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
-
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  min-height: 400px;
+  border-radius: 2rem;
+  width: 70%;
+}
+.ultimate {
+  background-image: url(/megaverse.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  border-radius: 2rem;
+  width: 70%;
 }
