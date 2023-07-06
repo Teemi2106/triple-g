@@ -98,10 +98,11 @@
     </footer>
   </body>
   <script>
-   window.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('DOMContentLoaded', function() {
       var videoPopup = document.getElementById('video-popup');
       var countdownTimer = document.getElementById('countdown-timer');
       var cancelButton = document.getElementById('cancel-button');
+      var videoFrame = document.getElementById('video-frame');
 
       // Hide the video popup initially
       videoPopup.style.display = 'none';
@@ -129,6 +130,7 @@
       cancelButton.addEventListener('click', function() {
         videoPopup.style.display = 'none';
         clearInterval(countdownInterval);
+        videoFrame.src = ''; // Stop the video
       });
     });
   </script>
