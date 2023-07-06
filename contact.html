@@ -14,7 +14,7 @@
     <main>
       <div id="video-popup">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/UDK_xM3WOPY" frameborder="0" allowfullscreen autoplay muted></iframe>
-    <div id="countdown-timer">10</div>
+    <div id="countdown-timer">300</div><span>seconds remaining</span>
     <button id="cancel-button">Cancel</button>
   </div>
       <h2
@@ -111,7 +111,7 @@
       videoPopup.style.display = 'flex';
 
       // Set a countdown to hide the countdown timer (not the video) after a specific time (in seconds)
-      var countdownTime = 10; // 10 seconds
+      var countdownTime = 300; // 10 seconds
       var remainingTime = countdownTime;
 
       // Update the countdown timer display every second
