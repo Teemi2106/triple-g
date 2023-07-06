@@ -13,12 +13,10 @@
     </header>
     <main>
       <div id="video-popup">
-        <video controls autoplay muted>
-          <source src="/Video2.mp4" type="video/mp4" />
-        </video>
-        <div id="countdown-timer">10</div>
-        <button id="cancel-button">Cancel</button>
-      </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/video_id" frameborder="0" allowfullscreen></iframe>
+    <div id="countdown-timer">10</div>
+    <button id="cancel-button">Cancel</button>
+  </div>
       <h2
         style="
           background-color: blue;
@@ -100,30 +98,37 @@
     </footer>
   </body>
   <script>
-    window.addEventListener("DOMContentLoaded", function () {
-      var videoPopup = document.getElementById("video-popup");
-      var countdownTimer = document.getElementById("countdown-timer");
-      var cancelButton = document.getElementById("cancel-button");
+    window.addEventListener('DOMContentLoaded', function() {
+      var videoPopup = document.getElementById('video-popup');
+      var countdownTimer = document.getElementById('countdown-timer');
+      var cancelButton = document.getElementById('cancel-button');
 
-      videoPopup.style.display = "none";
+      // Hide the video popup initially
+      videoPopup.style.display = 'none';
 
-      videoPopup.style.display = "flex";
+      // Show the video popup when the website opens
+      videoPopup.style.display = 'flex';
 
+      // Set a countdown to hide the video popup after a specific time (in seconds)
       var countdownTime = 10; // 10 seconds
       var remainingTime = countdownTime;
 
-      var countdownInterval = setInterval(function () {
+      // Update the countdown timer display every second
+      var countdownInterval = setInterval(function() {
         remainingTime--;
         countdownTimer.textContent = remainingTime;
 
         if (remainingTime === 0) {
+          videoPopup.style.display = 'none';
           clearInterval(countdownInterval);
-          cancelButton.style.display = "block";
+          countdownTimer.style.display = 'none'; // Hide countdown timer
+          cancelButton.style.display = 'block'; // Show cancel button
         }
       }, 1000);
 
-      cancelButton.addEventListener("click", function () {
-        videoPopup.style.display = "none";
+      // Event listener for the cancel button
+      cancelButton.addEventListener('click', function() {
+        videoPopup.style.display = 'none';
         clearInterval(countdownInterval);
       });
     });
