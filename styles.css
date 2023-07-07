@@ -109,7 +109,8 @@ embed {
 
 .popup {
   background-color: #ffffff;
-
+  background-image: url(/clear-perspective-through-glass-260nw-368367758.jpg);
+  background-blend-mode: multiply;
   motion: none;
   background-position: center;
   background-repeat: no-repeat;
