@@ -28,19 +28,11 @@ header {
   min-height: 6rem;
   padding: 0.5rem;
 }
-header h1 {
-  font-family: monospace;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .section1 h2 {
   text-align: center;
 }
-header h1 span {
-  color: rgb(50, 115, 255);
-  font-size: 4rem;
-}
+
 .nav-fill {
   width: 100%;
 }
