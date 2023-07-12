@@ -12,7 +12,7 @@ body {
 
 section {
   z-index: 999;
-  margin: 10px;
+
   border-radius: 0.5rem;
 }
 
@@ -124,12 +124,13 @@ embed {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(15px);
-  width: 420px;
+  width: 70%;
   padding: 30px 40px;
   position: fixed;
-  transform: translate(-50%, -50%);
+  transform: translate(-60%, -50%);
   left: 50%;
-  top: 50%;
+  top: 35%;
+  height: 600px;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
   display: none;
@@ -175,6 +176,12 @@ embed {
   text-align: justify;
   margin: 20px 0;
   line-height: 25px;
+}
+.pop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -318,5 +325,11 @@ footer h1 span {
   img {
     max-height: 10rem;
     max-width: 10rem;
+  }
+  section {
+    margin: 10px;
+  }
+  .section1 video {
+    width: 90%;
   }
 }
