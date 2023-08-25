@@ -67,23 +67,23 @@ header {
   font-weight: 400;
 }
 .yes {
-  border: 2px solid greenyellow;
+  border: 2px solid grey;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 6rem;
   width: 100%;
-  background-color: greenyellow;
+  background-color: grey;
   font-weight: 400;
 }
 .yes2 {
-  border: 2px solid greenyellow;
+  border: 2px solid grey;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 6rem;
   width: 100%;
-  background-color: greenyellow;
+  background-color: grey;
   font-weight: 400;
   position: sticky;
   position: -webkit-sticky;
@@ -97,13 +97,13 @@ embed {
 }
 
 .yes3 {
-  border: 2px solid greenyellow;
+  border: 2px solid grey;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 6rem;
   width: 100%;
-  background-color: greenyellow;
+  background-color: grey;
   font-weight: 400;
 }
 
