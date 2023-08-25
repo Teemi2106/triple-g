@@ -194,7 +194,7 @@ img {
 }
 .som:hover,
 .som:focus {
-  color: gray;
+  color: red;
 }
 .som {
   width: 100%;
